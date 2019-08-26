@@ -65,7 +65,7 @@ class _HomeState extends State<StatefulWidget> {
           title: Text(
             "笔记",
             style: TextStyle(
-                color: Colors.black87, fontFamily: '方正行楷简体', fontSize: 25),
+                color: Colors.black87, fontFamily: 'TitleFont', fontSize: 25),
           ),
           centerTitle: true,
           actions: <Widget>[

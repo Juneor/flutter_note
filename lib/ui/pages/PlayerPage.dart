@@ -29,7 +29,7 @@ class _PlayerState extends State<PlayerPage> {
           "演员表",
           style: TextStyle(
             color: Colors.black87,
-            fontFamily: '方正行楷简体',
+            fontFamily: 'TitleFont',
             fontSize: 25,
           ),
         ),
