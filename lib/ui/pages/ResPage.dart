@@ -7,16 +7,16 @@ import 'package:flutter/material.dart';
  * Description:
  */
 
-class BookPage extends StatefulWidget {
+class ResPage extends StatefulWidget {
   @override
   _OnePageState createState() => _OnePageState();
 }
 
-class _OnePageState extends State<BookPage> {
+class _OnePageState extends State<ResPage> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Book"),
+      child: Text("资源"),
     );
   }
 }

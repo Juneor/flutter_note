@@ -8,12 +8,12 @@ import 'package:webview_flutter/webview_flutter.dart';
  * Description:
  */
 
-class BlogPage extends StatefulWidget {
+class NotePage extends StatefulWidget {
   @override
   _ThreePageState createState() => _ThreePageState();
 }
 
-class _ThreePageState extends State<BlogPage> {
+class _ThreePageState extends State<NotePage> {
   @override
   Widget build(BuildContext context) {
     return Container(

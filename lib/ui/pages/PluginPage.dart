@@ -16,6 +16,6 @@ class PluginPage extends StatefulWidget {
 class _FourPageState extends State<PluginPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(child:WebView(initialUrl: "https://pub.dev/packages/image_picker"),);
+    return Center(child:Text("Plugin"),);
   }
 }

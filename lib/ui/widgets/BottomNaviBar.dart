@@ -22,8 +22,8 @@ class BottomNaviBar extends StatelessWidget {
         indicatorColor: Colors.transparent,
         tabs: <Widget>[
           Tab(
-            text: "笔记",
-            icon: Icon(Icons.chrome_reader_mode),
+            text: "资源",
+            icon: Icon(Icons.airplay),
           ),
           Tab(
             text: "组件",
@@ -34,8 +34,8 @@ class BottomNaviBar extends StatelessWidget {
             icon: Icon(Icons.extension),
           ),
           Tab(
-            text: "推荐",
-            icon: Icon(Icons.hot_tub),
+            text: "笔记",
+            icon: Icon(Icons.chrome_reader_mode),
           ),
         ],
         labelStyle: TextStyle(height: 0.3),

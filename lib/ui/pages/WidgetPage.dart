@@ -7,14 +7,14 @@ import 'package:flutter/material.dart';
  * Description:
  */
 
-class ProjectPage extends StatefulWidget {
+class WidgetPage extends StatefulWidget {
   @override
   _TwoPageState createState() => _TwoPageState();
 }
 
-class _TwoPageState extends State<ProjectPage> {
+class _TwoPageState extends State<WidgetPage> {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Project"),);
+    return Center(child: Text("Widget"),);
   }
 }

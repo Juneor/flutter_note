@@ -11,10 +11,10 @@ import 'package:flutter/services.dart';
 import 'package:flutter_note/ui/widgets/BottomNaviBar.dart';
 import 'package:flutter_note/ui/widgets/DrawerLayout.dart';
 
-import 'BlogPage.dart';
-import 'BookPage.dart';
+import 'NotePage.dart';
+import 'ResPage.dart';
 import 'PluginPage.dart';
-import 'ProjectPage.dart';
+import 'WidgetPage.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -43,9 +43,9 @@ class HomeStatefulWidget extends StatefulWidget {
 }
 
 class _HomeState extends State<StatefulWidget> {
-  BookPage bookPage = BookPage();
-  ProjectPage projectPage = ProjectPage();
-  BlogPage blogPage = BlogPage();
+  ResPage resPage = ResPage();
+  WidgetPage widgetPage = WidgetPage();
+  NotePage notePage = NotePage();
   PluginPage pluginPage = PluginPage();
 
   @override
@@ -63,7 +63,7 @@ class _HomeState extends State<StatefulWidget> {
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.black87),
           title: Text(
-            "笔记",
+            "资源",
             style: TextStyle(
                 color: Colors.black87, fontFamily: 'TitleFont', fontSize: 25),
           ),
@@ -80,10 +80,10 @@ class _HomeState extends State<StatefulWidget> {
         ),
         body: TabBarView(
           children: <Widget>[
-            bookPage,
-            projectPage,
-            blogPage,
+            resPage,
+            widgetPage,
             pluginPage,
+            notePage,
           ],
         ),
         drawer: DrawerLayout(),
