@@ -9,14 +9,18 @@ import 'package:flutter/material.dart';
 
 class ResPage extends StatefulWidget {
   @override
-  _OnePageState createState() => _OnePageState();
+  _ResPageState createState() => _ResPageState();
 }
 
-class _OnePageState extends State<ResPage> {
+class _ResPageState extends State<ResPage> with AutomaticKeepAliveClientMixin{
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Text("资源"),
     );
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }

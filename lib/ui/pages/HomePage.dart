@@ -43,10 +43,6 @@ class HomeStatefulWidget extends StatefulWidget {
 }
 
 class _HomeState extends State<StatefulWidget> {
-  ResPage resPage = ResPage();
-  WidgetPage widgetPage = WidgetPage();
-  NotePage notePage = NotePage();
-  PluginPage pluginPage = PluginPage();
 
   @override
   void initState() {
@@ -80,10 +76,10 @@ class _HomeState extends State<StatefulWidget> {
         ),
         body: TabBarView(
           children: <Widget>[
-            resPage,
-            widgetPage,
-            pluginPage,
-            notePage,
+            ResPage(),
+            WidgetPage(),
+            PluginPage(),
+            NotePage(),
           ],
         ),
         drawer: DrawerLayout(),

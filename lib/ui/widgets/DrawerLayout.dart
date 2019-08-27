@@ -35,38 +35,54 @@ class DrawerLayout extends StatelessWidget {
             InkWell(
                 child: ListTile(
               title: Text("用户反馈"),
-              trailing: Icon(Icons.feedback),
+              leading: Icon(Icons.feedback,color: Color(0xFF3FEECA),),
               onTap: () {
                 print("用户反馈");
               },
+                  dense: true,
             )),
             Divider(
               height: 0.1,
             ),
             ListTile(
               title: Text("系统设置"),
-              trailing: Icon(Icons.settings),
+              leading: Icon(Icons.settings,color: Color(0xFF0AA848),),
             ),
             Divider(
               height: 0.1,
             ),
             ListTile(
               title: Text("我要发布"),
-              trailing: Icon(Icons.send),
+              leading: Icon(Icons.send,color: Color(0xFF54C5F8),),
+            ),
+            Divider(
+              height: 0.1,
+            ),
+            ListTile(
+              title: Text("Android iOS图标制作"),
+              leading: Icon(Icons.android,color: Color(0xFF3DDB84),),
+            ),
+            Divider(
+              height: 0.1,
+            ),
+
+            ListTile(
+              title: Text("Android iOS启动图制作"),
+              leading: Icon(Icons.phone_iphone,color: Color(0xFFF5D414),),
             ),
             Divider(
               height: 0.1,
             ),
             ListTile(
               title: Text("注销"),
-              trailing: Icon(Icons.exit_to_app),
+              leading: Icon(Icons.exit_to_app,color: Color(0xFFEE0000),),
             ),
             Divider(
               height: 0.1,
             ),
             ListTile(
               title: Text("演员表"),
-              trailing: Icon(Icons.personal_video),
+              leading: Icon(Icons.local_movies,color: Color(0xFF303030),),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context){
 
                 return PlayerPage();

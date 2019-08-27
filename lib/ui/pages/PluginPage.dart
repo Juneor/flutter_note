@@ -10,10 +10,10 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class PluginPage extends StatefulWidget {
   @override
-  _FourPageState createState() => _FourPageState();
+  _PluginPageState createState() => _PluginPageState();
 }
 
-class _FourPageState extends State<PluginPage> {
+class _PluginPageState extends State<PluginPage> {
   @override
   Widget build(BuildContext context) {
     return Center(child:Text("Plugin"),);

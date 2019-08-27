@@ -9,12 +9,16 @@ import 'package:flutter/material.dart';
 
 class WidgetPage extends StatefulWidget {
   @override
-  _TwoPageState createState() => _TwoPageState();
+  _WidgetPageState createState() => _WidgetPageState();
 }
 
-class _TwoPageState extends State<WidgetPage> {
+class _WidgetPageState extends State<WidgetPage> with AutomaticKeepAliveClientMixin{
   @override
   Widget build(BuildContext context) {
     return Center(child: Text("Widget"),);
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }

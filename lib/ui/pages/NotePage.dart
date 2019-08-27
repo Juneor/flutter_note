@@ -10,14 +10,18 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class NotePage extends StatefulWidget {
   @override
-  _ThreePageState createState() => _ThreePageState();
+  _NotePageState createState() => _NotePageState();
 }
 
-class _ThreePageState extends State<NotePage> {
+class _NotePageState extends State<NotePage> with AutomaticKeepAliveClientMixin{
   @override
   Widget build(BuildContext context) {
     return Container(
       child: WebView(initialUrl: "https://www.jianshu.com/u/cf68df6e2121",),
     );
   }
+
+  @override
+  // TODO: implement wantKeepAlive
+  bool get wantKeepAlive => true;
 }
