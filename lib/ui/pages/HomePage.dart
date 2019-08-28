@@ -59,7 +59,7 @@ class _HomeState extends State<StatefulWidget> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          leading: IconButton(icon:Icon(Icons.menu),onPressed: ()=> Scaffold.of(context).openDrawer(),),
+          //leading: IconButton(icon:Icon(Icons.menu),onPressed: ()=> Scaffold.of(context).openDrawer(),),
           iconTheme: IconThemeData(color: Colors.black87),
           title: Text(
             "Flutter笔记",

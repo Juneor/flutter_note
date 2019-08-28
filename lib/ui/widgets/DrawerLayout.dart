@@ -45,7 +45,8 @@ class DrawerLayout extends StatelessWidget {
 //                    padding: EdgeInsets.all(null),
 //                    child: null,
 //                  ),
-//                )
+//                ),
+                Text("生于忧患,死于安乐,如果程序员一味沉迷过去,那等待着他们的也只是淘汰."),
               ],
             ),
             InkWell(
