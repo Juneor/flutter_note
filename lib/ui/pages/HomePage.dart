@@ -8,9 +8,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_note/ui/widgets/BottomNaviBar.dart';
 import 'package:flutter_note/ui/widgets/DrawerLayout.dart';
-
+import '../../generated/i18n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'NotePage.dart';
 import 'ResPage.dart';
 import 'PluginPage.dart';
@@ -57,9 +59,10 @@ class _HomeState extends State<StatefulWidget> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
+          leading: IconButton(icon:Icon(Icons.menu),onPressed: ()=> Scaffold.of(context).openDrawer(),),
           iconTheme: IconThemeData(color: Colors.black87),
           title: Text(
-            "资源",
+            "Flutter笔记",
             style: TextStyle(
                 color: Colors.black87, fontFamily: 'TitleFont', fontSize: 25),
           ),
