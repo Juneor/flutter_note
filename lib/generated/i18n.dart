@@ -21,7 +21,6 @@ class S implements WidgetsLocalizations {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  String get appName => "Flutter Note";
 }
 
 class $zh_HK extends S {
@@ -30,8 +29,6 @@ class $zh_HK extends S {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  @override
-  String get appName => "Flutter笔记";
 }
 
 class $en extends S {
@@ -44,8 +41,6 @@ class $zh_CN extends S {
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
-  @override
-  String get appName => "Flutter 笔记";
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
