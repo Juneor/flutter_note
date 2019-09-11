@@ -16,6 +16,9 @@
 .DS_Store
 /build
 .metadata
+/ios/Podfile
+/android/app/src/debug/gen/
+/ios/Runner.xcworkspace/xcshareddata/
 
 
 # IntelliJ related
