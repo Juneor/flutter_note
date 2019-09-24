@@ -41,11 +41,33 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        debugConfig {
+            keyAlias 'xintian'
+            keyPassword '123456'
+            storeFile file('../keystore/XTPublicKeyStore.jks')
+            storePassword '123456'
+        }
+        releaseConfig {
+            keyAlias 'xintian'
+            keyPassword '123456'
+            storeFile file('../keystore/XTPublicKeyStore.jks')
+            storePassword '123456'
+        }
+    }
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "${"flutter_note"}_v${defaultConfig.versionName}_${new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("GMT+8"))}.apk"
+                }
+            }
+        }
+        debug {
+            signingConfig signingConfigs.debugConfig
         }
     }
 }

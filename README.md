@@ -1,7 +1,7 @@
 # flutter_note
 
 ### 介绍
-Flutter 常用Lib库 、常用命令
+Flutter是一个组件化、跨全平台、响应式UI开源框架，现在Android、iOS的开发方式都是命令式UI，常用Lib库 、常用命令
 
 #### Lib
 ```bash

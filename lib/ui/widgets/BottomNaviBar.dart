@@ -8,6 +8,12 @@ import 'package:flutter/material.dart';
  */
 
 class BottomNaviBar extends StatelessWidget {
+
+  BottomNaviBarCallback bottomNaviBarCallback;
+
+
+//  BottomNaviBar({this.bottomNaviBarCallback});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,6 +26,12 @@ class BottomNaviBar extends StatelessWidget {
         labelColor: Color(0xFF54C5F8),
         unselectedLabelColor: Color(0xFFCDCDCD),
         indicatorColor: Colors.transparent,
+        onTap: (int index){
+          print("Tab index: " + index.toString());
+          if(bottomNaviBarCallback != null){
+            bottomNaviBarCallback.onTabSelect(index);
+          }
+        },
         tabs: <Widget>[
           Tab(
             text: "资源",
@@ -42,4 +54,9 @@ class BottomNaviBar extends StatelessWidget {
       ),
     );
   }
+
+}
+
+abstract class BottomNaviBarCallback{
+  void onTabSelect(int index);
 }

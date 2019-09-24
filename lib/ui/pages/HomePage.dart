@@ -54,6 +54,7 @@ class _HomeState extends State<StatefulWidget> {
 
   @override
   Widget build(BuildContext context) {
+    List titles = ["资源","组件","插件","笔记"];
     // TODO: implement build
     return DefaultTabController(
       length: 4,
